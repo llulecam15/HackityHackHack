@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+    
+    __strong IBOutlet UIDatePicker *dateTimePicker;
+    
+    
+}
 
+- (void) alarmNotification: (NSDate *) date;
+
+- (IBAction)SetAlarmButton:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIView *SECPage;
 @property (strong, nonatomic) IBOutlet UIView *MainPage;

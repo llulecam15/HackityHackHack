@@ -71,18 +71,28 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="6EX-0S-bk9"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7b1-3I-cIQ">
-                                <rect key="frame" x="0.0" y="109" width="375" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="475837021.10485703">
-                                    <!--2016-01-30 08:57:01 +0000-->
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="CEa-Nw-yzh">
+                                <rect key="frame" x="0.0" y="151" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="475839569.94124001">
+                                    <!--2016-01-30 09:39:29 +0000-->
                                 </date>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3x-4I-tCX">
+                                <rect key="frame" x="148" y="473" width="79" height="30"/>
+                                <state key="normal" title="Set Alarm">
+                                    <color key="titleColor" red="1" green="0.99441111500525559" blue="0.033556832611439713" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SetAlarmButton:" destination="Ie7-4a-hGP" eventType="touchUpInside" id="OWO-hj-4x8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1645445526" green="0.73487979169999995" blue="0.99054676289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="SECPage" destination="dKf-HD-Jzz" id="XTS-j5-22I"/>
+                        <outlet property="dateTimePicker" destination="CEa-Nw-yzh" id="p5t-TN-g5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUV-dJ-wAs" sceneMemberID="firstResponder"/>

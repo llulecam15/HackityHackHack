@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    dateTimePicker.date = [NSDate date];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,4 +38,29 @@
 - (IBAction)DoneButton:(id)sender {
     //self.view =[self MainPage];
 }
+
+- (IBAction)SetAlarmButton:(id)sender {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.timeZone = [NSTimeZone defaultTimeZone];
+    dateFormatter.timeStyle = NSDateFormatterShortStyle;
+    dateFormatter.dateStyle = NSDateFormatterShortStyle;
+    
+    NSString *dateTime = [dateFormatter stringFromDate: dateTimePicker.date];
+    NSLog( @"Set Alarm : %@", dateTime);
+    
+    //[dateFormatter release];
+}
+
+- (void) alarmNotification:(NSDate *)date {
+    
+    UILocalNotification *noti = [[UILocalNotification alloc] init];
+    
+    //[noti release];
+    noti.fireDate = date;
+    noti.alertBody = @"GOOD MORROW";
+    
+    //[[UIApplication sharedApplication] scheduledLocalNotifications: noti];
+    
+}
+
 @end
