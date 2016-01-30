@@ -24,4 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)GoBackLoser:(id)sender {
+    self.view = [self MainPage];
+}
+
+- (IBAction)MainPage:(id)sender {
+    self.view = [self SECPage];
+}
 @end

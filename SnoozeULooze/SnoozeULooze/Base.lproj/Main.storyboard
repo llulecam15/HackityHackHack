@@ -8,6 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -17,110 +18,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rA2-i3-6gv">
-                                <rect key="frame" x="25" y="28" width="335" height="39"/>
-                                <color key="backgroundColor" red="0.10949518531560898" green="0.076748751103878021" blue="0.79412442445755005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="heH-qa-HJd">
+                                <rect key="frame" x="142" y="28" width="119" height="73"/>
+                                <color key="backgroundColor" red="0.10949518530000001" green="0.076748751099999998" blue="0.79412442449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="42"/>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="New">
-                                            <attributes>
-                                                <color key="NSColor" red="0.21870660781860352" green="0.91505604982376099" blue="0.94295269250869751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="40" name="EurostileRegular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" title="New">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="MainPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDT-tp-K2a"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fae-iE-W8g">
-                                <rect key="frame" x="25" y="93" width="335" height="247"/>
+                                <rect key="frame" x="29" y="144" width="335" height="247"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.16454455256462097" green="0.73487979173660278" blue="0.99054676294326782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="MainPage" destination="8bC-Xf-vdC" id="KvM-Bx-RP7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244.5" y="350.5"/>
+            <point key="canvasLocation" x="263.5" y="298.5"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="F0B-Yj-sKp">
+        <scene sceneID="dhj-l3-p38">
             <objects>
-                <viewController id="fSf-ll-Yg6" customClass="ViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUV-dJ-wAs" sceneMemberID="firstResponder"/>
+                <viewController id="Ie7-4a-hGP" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="K6w-wV-gIQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="mGf-gt-pIh"/>
+                        <viewControllerLayoutGuide type="top" id="N4V-jl-FCF"/>
+                        <viewControllerLayoutGuide type="bottom" id="TLV-Ld-x4u"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RzG-0T-NCz">
+                    <view key="view" contentMode="scaleToFill" id="dKf-HD-Jzz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="e2s-sV-KMD">
-                                <rect key="frame" x="25" y="28" width="335" height="39"/>
-                                <color key="backgroundColor" red="0.10949518531560898" green="0.076748751103878021" blue="0.79412442445755005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
-                                <state key="normal" title="New">
-                                    <color key="titleColor" red="0.21870660781860352" green="0.91505604982376099" blue="0.94295269250869751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" red="0.90177351236343384" green="0.97250896692276001" blue="0.95146256685256958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7T-5Z-fqy">
+                                <rect key="frame" x="20" y="20" width="211" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Go Back. Loser. ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="GoBackLoser:" destination="Ie7-4a-hGP" eventType="touchUpInside" id="hl6-mn-qRx"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bit-Ys-fyF">
-                                <rect key="frame" x="25" y="93" width="335" height="247"/>
-                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.16454455256462097" green="0.73487979173660278" blue="0.99054676294326782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1645445526" green="0.73487979169999995" blue="0.99054676289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b6P-Tz-oXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="636.5" y="350.5"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="VaJ-nP-nAj">
-            <objects>
-                <tableViewController id="LFI-hQ-qv4" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JRv-u2-pJg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4gI-gx-Hs1">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4gI-gx-Hs1" id="Hl3-f1-iHK">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="LFI-hQ-qv4" id="6Gu-Hf-re4"/>
-                            <outlet property="delegate" destination="LFI-hQ-qv4" id="rGC-yp-tcY"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="OQE-um-xv6"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D2P-W3-CaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Wt1-q8-Cvi">
-            <objects>
-                <navigationController id="XaA-fm-pwz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gLc-Ro-NjY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
                     <connections>
-                        <segue destination="LFI-hQ-qv4" kind="relationship" relationship="rootViewController" id="CFd-RB-gKx"/>
+                        <outlet property="SECPage" destination="dKf-HD-Jzz" id="XTS-j5-22I"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lv6-TU-NTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
             </objects>
+            <point key="canvasLocation" x="650.5" y="298.5"/>
         </scene>
     </scenes>
 </document>

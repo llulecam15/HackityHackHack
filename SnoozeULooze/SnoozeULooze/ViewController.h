@@ -11,5 +11,10 @@
 @interface ViewController : UIViewController
 
 
+@property (strong, nonatomic) IBOutlet UIView *SECPage;
+@property (strong, nonatomic) IBOutlet UIView *MainPage;
+- (IBAction)GoBackLoser:(id)sender;
+- (IBAction)MainPage:(id)sender;
+
 @end
 
