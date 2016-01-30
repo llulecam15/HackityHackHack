@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E81FE0D21C5C870400E9A67C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81FE0D11C5C870400E9A67C /* main.m */; };
+		E81FE0D51C5C870400E9A67C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E81FE0D41C5C870400E9A67C /* AppDelegate.m */; };
+		E81FE0D81C5C870400E9A67C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81FE0D71C5C870400E9A67C /* ViewController.m */; };
+		E81FE0DB1C5C870400E9A67C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81FE0D91C5C870400E9A67C /* Main.storyboard */; };
+		E81FE0DD1C5C870400E9A67C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E81FE0DC1C5C870400E9A67C /* Assets.xcassets */; };
+		E81FE0E01C5C870400E9A67C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81FE0DE1C5C870400E9A67C /* LaunchScreen.storyboard */; };
+		E81FE0EB1C5C870400E9A67C /* SnoozeULoozeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E81FE0EA1C5C870400E9A67C /* SnoozeULoozeTests.m */; };
+		E81FE0F61C5C870400E9A67C /* SnoozeULoozeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E81FE0F51C5C870400E9A67C /* SnoozeULoozeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E81FE0E71C5C870400E9A67C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81FE0C51C5C870400E9A67C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81FE0CC1C5C870400E9A67C;
+			remoteInfo = SnoozeULooze;
+		};
+		E81FE0F21C5C870400E9A67C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81FE0C51C5C870400E9A67C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E81FE0CC1C5C870400E9A67C;
+			remoteInfo = SnoozeULooze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E81FE0CD1C5C870400E9A67C /* SnoozeULooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnoozeULooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81FE0D11C5C870400E9A67C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E81FE0D31C5C870400E9A67C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E81FE0D41C5C870400E9A67C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E81FE0D61C5C870400E9A67C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E81FE0D71C5C870400E9A67C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E81FE0DA1C5C870400E9A67C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E81FE0DC1C5C870400E9A67C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E81FE0DF1C5C870400E9A67C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E81FE0E11C5C870400E9A67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81FE0E61C5C870400E9A67C /* SnoozeULoozeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnoozeULoozeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81FE0EA1C5C870400E9A67C /* SnoozeULoozeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnoozeULoozeTests.m; sourceTree = "<group>"; };
+		E81FE0EC1C5C870400E9A67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81FE0F11C5C870400E9A67C /* SnoozeULoozeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnoozeULoozeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81FE0F51C5C870400E9A67C /* SnoozeULoozeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnoozeULoozeUITests.m; sourceTree = "<group>"; };
+		E81FE0F71C5C870400E9A67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E81FE0CA1C5C870400E9A67C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81FE0E31C5C870400E9A67C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81FE0EE1C5C870400E9A67C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E81FE0C41C5C870400E9A67C = {
+			isa = PBXGroup;
+			children = (
+				E81FE0CF1C5C870400E9A67C /* SnoozeULooze */,
+				E81FE0E91C5C870400E9A67C /* SnoozeULoozeTests */,
+				E81FE0F41C5C870400E9A67C /* SnoozeULoozeUITests */,
+				E81FE0CE1C5C870400E9A67C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E81FE0CE1C5C870400E9A67C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E81FE0CD1C5C870400E9A67C /* SnoozeULooze.app */,
+				E81FE0E61C5C870400E9A67C /* SnoozeULoozeTests.xctest */,
+				E81FE0F11C5C870400E9A67C /* SnoozeULoozeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E81FE0CF1C5C870400E9A67C /* SnoozeULooze */ = {
+			isa = PBXGroup;
+			children = (
+				E81FE0D31C5C870400E9A67C /* AppDelegate.h */,
+				E81FE0D41C5C870400E9A67C /* AppDelegate.m */,
+				E81FE0D61C5C870400E9A67C /* ViewController.h */,
+				E81FE0D71C5C870400E9A67C /* ViewController.m */,
+				E81FE0D91C5C870400E9A67C /* Main.storyboard */,
+				E81FE0DC1C5C870400E9A67C /* Assets.xcassets */,
+				E81FE0DE1C5C870400E9A67C /* LaunchScreen.storyboard */,
+				E81FE0E11C5C870400E9A67C /* Info.plist */,
+				E81FE0D01C5C870400E9A67C /* Supporting Files */,
+			);
+			path = SnoozeULooze;
+			sourceTree = "<group>";
+		};
+		E81FE0D01C5C870400E9A67C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E81FE0D11C5C870400E9A67C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E81FE0E91C5C870400E9A67C /* SnoozeULoozeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E81FE0EA1C5C870400E9A67C /* SnoozeULoozeTests.m */,
+				E81FE0EC1C5C870400E9A67C /* Info.plist */,
+			);
+			path = SnoozeULoozeTests;
+			sourceTree = "<group>";
+		};
+		E81FE0F41C5C870400E9A67C /* SnoozeULoozeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E81FE0F51C5C870400E9A67C /* SnoozeULoozeUITests.m */,
+				E81FE0F71C5C870400E9A67C /* Info.plist */,
+			);
+			path = SnoozeULoozeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E81FE0CC1C5C870400E9A67C /* SnoozeULooze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81FE0FA1C5C870400E9A67C /* Build configuration list for PBXNativeTarget "SnoozeULooze" */;
+			buildPhases = (
+				E81FE0C91C5C870400E9A67C /* Sources */,
+				E81FE0CA1C5C870400E9A67C /* Frameworks */,
+				E81FE0CB1C5C870400E9A67C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnoozeULooze;
+			productName = SnoozeULooze;
+			productReference = E81FE0CD1C5C870400E9A67C /* SnoozeULooze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E81FE0E51C5C870400E9A67C /* SnoozeULoozeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81FE0FD1C5C870400E9A67C /* Build configuration list for PBXNativeTarget "SnoozeULoozeTests" */;
+			buildPhases = (
+				E81FE0E21C5C870400E9A67C /* Sources */,
+				E81FE0E31C5C870400E9A67C /* Frameworks */,
+				E81FE0E41C5C870400E9A67C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E81FE0E81C5C870400E9A67C /* PBXTargetDependency */,
+			);
+			name = SnoozeULoozeTests;
+			productName = SnoozeULoozeTests;
+			productReference = E81FE0E61C5C870400E9A67C /* SnoozeULoozeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E81FE0F01C5C870400E9A67C /* SnoozeULoozeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81FE1001C5C870400E9A67C /* Build configuration list for PBXNativeTarget "SnoozeULoozeUITests" */;
+			buildPhases = (
+				E81FE0ED1C5C870400E9A67C /* Sources */,
+				E81FE0EE1C5C870400E9A67C /* Frameworks */,
+				E81FE0EF1C5C870400E9A67C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E81FE0F31C5C870400E9A67C /* PBXTargetDependency */,
+			);
+			name = SnoozeULoozeUITests;
+			productName = SnoozeULoozeUITests;
+			productReference = E81FE0F11C5C870400E9A67C /* SnoozeULoozeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E81FE0C51C5C870400E9A67C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Maria Vizcaino";
+				TargetAttributes = {
+					E81FE0CC1C5C870400E9A67C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8X7XQ7WQH2;
+					};
+					E81FE0E51C5C870400E9A67C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8X7XQ7WQH2;
+						TestTargetID = E81FE0CC1C5C870400E9A67C;
+					};
+					E81FE0F01C5C870400E9A67C = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8X7XQ7WQH2;
+						TestTargetID = E81FE0CC1C5C870400E9A67C;
+					};
+				};
+			};
+			buildConfigurationList = E81FE0C81C5C870400E9A67C /* Build configuration list for PBXProject "SnoozeULooze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E81FE0C41C5C870400E9A67C;
+			productRefGroup = E81FE0CE1C5C870400E9A67C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E81FE0CC1C5C870400E9A67C /* SnoozeULooze */,
+				E81FE0E51C5C870400E9A67C /* SnoozeULoozeTests */,
+				E81FE0F01C5C870400E9A67C /* SnoozeULoozeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E81FE0CB1C5C870400E9A67C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81FE0E01C5C870400E9A67C /* LaunchScreen.storyboard in Resources */,
+				E81FE0DD1C5C870400E9A67C /* Assets.xcassets in Resources */,
+				E81FE0DB1C5C870400E9A67C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81FE0E41C5C870400E9A67C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81FE0EF1C5C870400E9A67C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E81FE0C91C5C870400E9A67C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81FE0D81C5C870400E9A67C /* ViewController.m in Sources */,
+				E81FE0D51C5C870400E9A67C /* AppDelegate.m in Sources */,
+				E81FE0D21C5C870400E9A67C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81FE0E21C5C870400E9A67C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81FE0EB1C5C870400E9A67C /* SnoozeULoozeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81FE0ED1C5C870400E9A67C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E81FE0F61C5C870400E9A67C /* SnoozeULoozeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E81FE0E81C5C870400E9A67C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81FE0CC1C5C870400E9A67C /* SnoozeULooze */;
+			targetProxy = E81FE0E71C5C870400E9A67C /* PBXContainerItemProxy */;
+		};
+		E81FE0F31C5C870400E9A67C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E81FE0CC1C5C870400E9A67C /* SnoozeULooze */;
+			targetProxy = E81FE0F21C5C870400E9A67C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E81FE0D91C5C870400E9A67C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E81FE0DA1C5C870400E9A67C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E81FE0DE1C5C870400E9A67C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E81FE0DF1C5C870400E9A67C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E81FE0F81C5C870400E9A67C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E81FE0F91C5C870400E9A67C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E81FE0FB1C5C870400E9A67C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SnoozeULooze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mvizcain.SnoozeULooze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E81FE0FC1C5C870400E9A67C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SnoozeULooze/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mvizcain.SnoozeULooze;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E81FE0FE1C5C870400E9A67C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnoozeULoozeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mvizcain.SnoozeULoozeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnoozeULooze.app/SnoozeULooze";
+			};
+			name = Debug;
+		};
+		E81FE0FF1C5C870400E9A67C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnoozeULoozeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mvizcain.SnoozeULoozeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnoozeULooze.app/SnoozeULooze";
+			};
+			name = Release;
+		};
+		E81FE1011C5C870400E9A67C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SnoozeULoozeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mvizcain.SnoozeULoozeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SnoozeULooze;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E81FE1021C5C870400E9A67C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SnoozeULoozeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mvizcain.SnoozeULoozeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SnoozeULooze;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E81FE0C81C5C870400E9A67C /* Build configuration list for PBXProject "SnoozeULooze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81FE0F81C5C870400E9A67C /* Debug */,
+				E81FE0F91C5C870400E9A67C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E81FE0FA1C5C870400E9A67C /* Build configuration list for PBXNativeTarget "SnoozeULooze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81FE0FB1C5C870400E9A67C /* Debug */,
+				E81FE0FC1C5C870400E9A67C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E81FE0FD1C5C870400E9A67C /* Build configuration list for PBXNativeTarget "SnoozeULoozeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81FE0FE1C5C870400E9A67C /* Debug */,
+				E81FE0FF1C5C870400E9A67C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E81FE1001C5C870400E9A67C /* Build configuration list for PBXNativeTarget "SnoozeULoozeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E81FE1011C5C870400E9A67C /* Debug */,
+				E81FE1021C5C870400E9A67C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E81FE0C51C5C870400E9A67C /* Project object */;
+}
