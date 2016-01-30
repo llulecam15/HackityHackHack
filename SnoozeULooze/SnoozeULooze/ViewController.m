@@ -29,6 +29,10 @@
 }
 
 - (IBAction)MainPage:(id)sender {
-    self.view = [self SECPage];
+    //self.view = [self SECPage];
+}
+
+- (IBAction)DoneButton:(id)sender {
+    //self.view =[self MainPage];
 }
 @end
