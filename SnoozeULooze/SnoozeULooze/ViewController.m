@@ -8,7 +8,14 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    
+    
+    __weak IBOutlet UIDatePicker *datePickerView;
+    __weak IBOutlet UILabel *displayAlarm;
+    
+    __weak IBOutlet UILabel *labelTest;
+}
 
 @end
 
@@ -20,15 +27,25 @@
     
     dateTimePicker.date = [NSDate date];
     
+    [self->datePickerView addTarget:self action:@selector(changeDP:) forControlEvents:UIControlEventValueChanged];
+    
+    //self.alarmText.text = dateTime;
+    
+}
+
+- (void)changeDP:(UIDatePicker *)datePicker {
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat: @"dd-MM-yyyy HH:mm"];
+    NSString *dateString = [dateFormatter stringFromDate:datePicker.date];
+    self->displayAlarm.text = dateString;
+    self->labelTest.text = dateString;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)GoBackLoser:(id)sender {
-    self.view = [self MainPage];
 }
 
 - (IBAction)MainPage:(id)sender {
@@ -47,6 +64,10 @@
     
     NSString *dateTime = [dateFormatter stringFromDate: dateTimePicker.date];
     NSLog( @"Set Alarm : %@", dateTime);
+    
+    //self.alarmText.text = [dateFormatter stringFromDate:dateTimePicker.date];
+    //self.alarmText.text = (@"%s", dateTime);
+    
     
     //[dateFormatter release];
 }

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface ViewController : UIViewController {
     
-    
-    __strong IBOutlet UIDatePicker *dateTimePicker;
-    
+    __weak IBOutlet UIDatePicker *dateTimePicker;
     
 }
 
@@ -22,9 +22,13 @@
 
 @property (strong, nonatomic) IBOutlet UIView *SECPage;
 @property (strong, nonatomic) IBOutlet UIView *MainPage;
-- (IBAction)GoBackLoser:(id)sender;
 - (IBAction)MainPage:(id)sender;
 - (IBAction)DoneButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIStackView *AlarmTimesStack;
+
+@property (weak, nonatomic) IBOutlet UILabel *alarmText;
+
 
 @end
 

@@ -8,6 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -30,18 +31,22 @@
                                     <segue destination="Ie7-4a-hGP" kind="show" id="gzT-3P-Je2"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fae-iE-W8g">
-                                <rect key="frame" x="29" y="144" width="335" height="247"/>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNS-zY-Rs5">
+                                <rect key="frame" x="20" y="155" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.16454455256462097" green="0.73487979173660278" blue="0.99054676294326782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="MainPage" destination="8bC-Xf-vdC" id="KvM-Bx-RP7"/>
+                        <outlet property="alarmText" destination="SNS-zY-Rs5" id="mg8-L5-xw6"/>
+                        <outlet property="displayAlarm" destination="SNS-zY-Rs5" id="AlO-kc-sxI"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="269.5" y="1163.5"/>
         </scene>
@@ -86,18 +91,26 @@
                                     <action selector="SetAlarmButton:" destination="Ie7-4a-hGP" eventType="touchUpInside" id="OWO-hj-4x8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7U-Cm-Zf0">
+                                <rect key="frame" x="20" y="536" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1645445526" green="0.73487979169999995" blue="0.99054676289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="SECPage" destination="dKf-HD-Jzz" id="XTS-j5-22I"/>
+                        <outlet property="datePickerView" destination="CEa-Nw-yzh" id="GWN-s5-xXd"/>
                         <outlet property="dateTimePicker" destination="CEa-Nw-yzh" id="p5t-TN-g5f"/>
+                        <outlet property="labelTest" destination="F7U-Cm-Zf0" id="KcX-OB-DQG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUV-dJ-wAs" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.5" y="320.5"/>
+            <point key="canvasLocation" x="739.5" y="304.5"/>
         </scene>
     </scenes>
 </document>
