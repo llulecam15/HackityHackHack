@@ -90,7 +90,7 @@
     
     NSMutableArray * stk = [Alarm getStack];    // Create alarm stack
     //
-    NSString *arrayToStr = [stk componentsJoinedByString:@"\n"];
+    NSString *arrayToStr = [stk componentsJoinedByString:@" "];
     
     _alarmStk.text = arrayToStr;
     stkToLabelTest.text = arrayToStr;
