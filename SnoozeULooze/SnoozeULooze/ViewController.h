@@ -16,6 +16,8 @@
     
 }
 
+- (void)changeDP:(UIDatePicker *)datePicker;
+
 - (void) alarmNotification: (NSDate *) date;
 
 - (IBAction)SetAlarmButton:(id)sender;

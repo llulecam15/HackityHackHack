@@ -29,6 +29,8 @@
     
     [self->datePickerView addTarget:self action:@selector(changeDP:) forControlEvents:UIControlEventValueChanged];
     
+    //[self SetAlarmButton:<#(id)#>sender];
+    
     //self.alarmText.text = dateTime;
     
 }

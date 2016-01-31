@@ -48,7 +48,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="269.5" y="1163.5"/>
+            <point key="canvasLocation" x="73.5" y="1027.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dhj-l3-p38">
@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUV-dJ-wAs" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739.5" y="304.5"/>
+            <point key="canvasLocation" x="683.5" y="1034.5"/>
         </scene>
     </scenes>
 </document>

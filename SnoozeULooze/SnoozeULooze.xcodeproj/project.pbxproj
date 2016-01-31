@@ -15,6 +15,7 @@
 		E81FE0E01C5C870400E9A67C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E81FE0DE1C5C870400E9A67C /* LaunchScreen.storyboard */; };
 		E81FE0EB1C5C870400E9A67C /* SnoozeULoozeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E81FE0EA1C5C870400E9A67C /* SnoozeULoozeTests.m */; };
 		E81FE0F61C5C870400E9A67C /* SnoozeULoozeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E81FE0F51C5C870400E9A67C /* SnoozeULoozeUITests.m */; };
+		E88DB35F1C5D9800007D860D /* AlarmList.m in Sources */ = {isa = PBXBuildFile; fileRef = E88DB35E1C5D9800007D860D /* AlarmList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E81FE0F11C5C870400E9A67C /* SnoozeULoozeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnoozeULoozeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81FE0F51C5C870400E9A67C /* SnoozeULoozeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnoozeULoozeUITests.m; sourceTree = "<group>"; };
 		E81FE0F71C5C870400E9A67C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88DB35E1C5D9800007D860D /* AlarmList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmList.m; sourceTree = "<group>"; };
+		E88DB3601C5D9816007D860D /* AlarmList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlarmList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				E81FE0D61C5C870400E9A67C /* ViewController.h */,
 				E81FE0D71C5C870400E9A67C /* ViewController.m */,
 				E81FE0D91C5C870400E9A67C /* Main.storyboard */,
+				E88DB3601C5D9816007D860D /* AlarmList.h */,
+				E88DB35E1C5D9800007D860D /* AlarmList.m */,
 				E81FE0DC1C5C870400E9A67C /* Assets.xcassets */,
 				E81FE0DE1C5C870400E9A67C /* LaunchScreen.storyboard */,
 				E81FE0E11C5C870400E9A67C /* Info.plist */,
@@ -276,6 +281,7 @@
 				E81FE0D81C5C870400E9A67C /* ViewController.m in Sources */,
 				E81FE0D51C5C870400E9A67C /* AppDelegate.m in Sources */,
 				E81FE0D21C5C870400E9A67C /* main.m in Sources */,
+				E88DB35F1C5D9800007D860D /* AlarmList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +507,7 @@
 				E81FE0FC1C5C870400E9A67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E81FE0FD1C5C870400E9A67C /* Build configuration list for PBXNativeTarget "SnoozeULoozeTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +516,7 @@
 				E81FE0FF1C5C870400E9A67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E81FE1001C5C870400E9A67C /* Build configuration list for PBXNativeTarget "SnoozeULoozeUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +525,7 @@
 				E81FE1021C5C870400E9A67C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
