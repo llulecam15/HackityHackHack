@@ -15,6 +15,7 @@
     __weak IBOutlet UIDatePicker *datePickerView;
     __weak IBOutlet UILabel *displayAlarm;
     
+    __weak IBOutlet UILabel *_alarmStk;
     __weak IBOutlet UILabel *labelTest;
     
     //__weak IBOutlet UILabel *PrioritySetting;
@@ -75,15 +76,16 @@
     dateFormatter.dateStyle = NSDateFormatterShortStyle;
     
     NSString *dateTime = [dateFormatter stringFromDate: dateTimePicker.date];
-    NSLog( @"Set Alarm Button Was Pressed : %@", dateTime);
+    //NSLog( @"Set Alarm Button Was Pressed : %@", dateTime);
     
     [Alarm newAlarm:dateTime];
     
     
     //self.alarmText.text = [dateFormatter stringFromDate:dateTimePicker.date];
     //self.alarmText.text = (@"%s", dateTime);
+    NSMutableArray * stk = [Alarm getStack];
     
-    
+    self.alarmStk.text = dateTime;
     //[dateFormatter release];
 }
 

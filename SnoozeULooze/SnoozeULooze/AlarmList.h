@@ -22,7 +22,7 @@
 
 - (void) deleteAlarm;
 
-+ (void) getStack;
++ (NSMutableArray *) getStack;
 
 
 @end

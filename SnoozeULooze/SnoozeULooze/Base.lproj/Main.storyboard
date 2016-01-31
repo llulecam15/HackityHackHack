@@ -47,6 +47,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="MainPage" destination="8bC-Xf-vdC" id="KvM-Bx-RP7"/>
+                        <outlet property="alarmStk" destination="SNS-zY-Rs5" id="bZN-yZ-san"/>
                         <outlet property="alarmText" destination="SNS-zY-Rs5" id="mg8-L5-xw6"/>
                         <outlet property="displayAlarm" destination="SNS-zY-Rs5" id="AlO-kc-sxI"/>
                     </connections>

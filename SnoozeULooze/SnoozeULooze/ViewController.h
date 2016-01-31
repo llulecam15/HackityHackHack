@@ -20,7 +20,7 @@
 
 - (void) alarmNotification: (NSDate *) date;
 
-
+@property (weak, nonatomic) IBOutlet UILabel *alarmStk;
 
 @property (weak, nonatomic) IBOutlet UILabel *PrioritySetting;
 

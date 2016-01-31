@@ -41,8 +41,8 @@ NSMutableArray *alarmstk;
     
 }
 
-+ (void) getStack{
-    
++ (NSMutableArray *) getStack{
+    return alarmstk;
 }
 
 
