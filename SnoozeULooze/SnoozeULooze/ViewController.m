@@ -88,9 +88,8 @@
     //self.alarmText.text = [dateFormatter stringFromDate:dateTimePicker.date];
     //self.alarmText.text = (@"%s", dateTime);
     NSMutableArray * stk = [Alarm getStack];    // Create alarm stack
-    
-    int numElem = [stk count];
-    
+    NSString *arrayToStr = [stk componentsJoinedByString:@" "];
+    _alarmStk.text = arrayToStr;
     
     // Set text to date and time in alarm stack
     self.alarmStk.text = dateTime;
