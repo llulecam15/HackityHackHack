@@ -9,15 +9,25 @@
 #import <Foundation/Foundation.h>
 #import "AlarmList.h"
 
-
 @implementation Alarm
+
+NSMutableArray *alarmstk;
+
+- (id)init{
+    
+    alarmstk = [[NSMutableArray alloc]init];
+    return self;
+}
 
 + (void) newAlarm:(NSString*) dateTime{
     [self printAlarm:dateTime];
 }
 
 + (void) printAlarm:(NSString*) dateTime{
-    NSLog( @"Set Alarm : %@", dateTime);
+   // NSLog( @"Set Alarm : %@", dateTime);
+    
+    [alarmstk addObject:dateTime];
+    NSLog( @"alarm Stack : %@", alarmstk);
 }
 
 - (void) setPriority{
@@ -32,5 +42,11 @@
     
 }
 
+
+
+
 @end
+
+
+
 
