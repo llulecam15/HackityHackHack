@@ -123,6 +123,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JP1-Dy-f1M">
+                                <rect key="frame" x="63" y="397" width="273" height="144"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1645445526" green="0.73487979169999995" blue="0.99054676289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -133,6 +139,7 @@
                         <outlet property="datePickerView" destination="CEa-Nw-yzh" id="GWN-s5-xXd"/>
                         <outlet property="dateTimePicker" destination="CEa-Nw-yzh" id="p5t-TN-g5f"/>
                         <outlet property="labelTest" destination="F7U-Cm-Zf0" id="KcX-OB-DQG"/>
+                        <outlet property="stkToLabelTest" destination="JP1-Dy-f1M" id="sxg-8C-SVa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUV-dJ-wAs" sceneMemberID="firstResponder"/>

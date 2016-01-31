@@ -16,7 +16,7 @@
     __weak IBOutlet UILabel *displayAlarm;
     __weak IBOutlet UILabel *_alarmStk;
     __weak IBOutlet UILabel *labelTest;
-    
+    __weak IBOutlet UILabel *stkToLabelTest;
     //__weak IBOutlet UILabel *PrioritySetting;
 }
 
@@ -87,10 +87,13 @@
     
     //self.alarmText.text = [dateFormatter stringFromDate:dateTimePicker.date];
     //self.alarmText.text = (@"%s", dateTime);
-    NSMutableArray * stk = [Alarm getStack];    // Create alarm stack
-    NSString *arrayToStr = [stk componentsJoinedByString:@" "];
-    _alarmStk.text = arrayToStr;
     
+    NSMutableArray * stk = [Alarm getStack];    // Create alarm stack
+    //
+    NSString *arrayToStr = [stk componentsJoinedByString:@"\n"];
+    
+    _alarmStk.text = arrayToStr;
+    stkToLabelTest.text = arrayToStr;
     // Set text to date and time in alarm stack
     self.alarmStk.text = dateTime;
     //[dateFormatter release];
