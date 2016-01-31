@@ -22,6 +22,7 @@
 
 - (void) deleteAlarm;
 
++ (void) getStack;
 
 
 @end

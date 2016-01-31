@@ -14,7 +14,6 @@
 NSMutableArray *alarmstk;
 
 - (id)init{
-    
     alarmstk = [[NSMutableArray alloc]init];
     return self;
 }
@@ -42,7 +41,9 @@ NSMutableArray *alarmstk;
     
 }
 
-
++ (void) getStack{
+    
+}
 
 
 @end

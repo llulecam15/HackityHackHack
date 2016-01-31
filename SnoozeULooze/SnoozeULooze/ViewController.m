@@ -16,6 +16,8 @@
     __weak IBOutlet UILabel *displayAlarm;
     
     __weak IBOutlet UILabel *labelTest;
+    
+    //__weak IBOutlet UILabel *PrioritySetting;
 }
 
 @end
@@ -41,8 +43,9 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat: @"dd-MM-yyyy HH:mm"];
     NSString *dateString = [dateFormatter stringFromDate:datePicker.date];
-    self->displayAlarm.text = dateString;
-    self->labelTest.text = dateString;
+    //self->displayAlarm.text = @"hhelllooo"; //dateString;
+    self->labelTest.text = dateString;        //Displays Date&Time on label
+    //self->PrioritySetting.text = @"Make Priority";
     
 }
 
@@ -72,7 +75,7 @@
     dateFormatter.dateStyle = NSDateFormatterShortStyle;
     
     NSString *dateTime = [dateFormatter stringFromDate: dateTimePicker.date];
-    //NSLog( @"Set Alarm : %@", dateTime);
+    NSLog( @"Set Alarm Button Was Pressed : %@", dateTime);
     
     [Alarm newAlarm:dateTime];
     
@@ -82,6 +85,9 @@
     
     
     //[dateFormatter release];
+}
+
+- (IBAction)SwitchBool:(UISwitch *)sender {
 }
 
 - (void) alarmNotification:(NSDate *)date {

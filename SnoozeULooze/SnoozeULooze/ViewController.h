@@ -20,14 +20,17 @@
 
 - (void) alarmNotification: (NSDate *) date;
 
-- (IBAction)SetAlarmButton:(id)sender;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *PrioritySetting;
 
 @property (strong, nonatomic) IBOutlet UIView *SECPage;
 @property (strong, nonatomic) IBOutlet UIView *MainPage;
 - (IBAction)MainPage:(id)sender;
 - (IBAction)DoneButton:(id)sender;
 
-@property (weak, nonatomic) IBOutlet UIStackView *AlarmTimesStack;
+- (IBAction)SetAlarmButton:(id)sender;
+- (IBAction)SwitchBool:(UISwitch *)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *alarmText;
 
