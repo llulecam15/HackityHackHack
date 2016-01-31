@@ -10,4 +10,20 @@
 #define Header_h
 
 
+@interface Alarm : NSObject
+
++ (void) newAlarm:(NSString*)dateTime;
+
+- (void) setPriority;
+
++ (void) printAlarm:(NSString*) dateTime;
+
+- (void) editAlarm;
+
+- (void) deleteAlarm;
+
+
+
+@end
+
 #endif /* Header_h */

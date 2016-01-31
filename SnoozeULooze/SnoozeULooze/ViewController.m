@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AlarmList.h"
 
 @interface ViewController () {
     
@@ -59,13 +60,22 @@
 }
 
 - (IBAction)SetAlarmButton:(id)sender {
+    Alarm *alarm;
+    
+    alarm = [[Alarm alloc] init];
+    
+    
+    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.timeZone = [NSTimeZone defaultTimeZone];
     dateFormatter.timeStyle = NSDateFormatterShortStyle;
     dateFormatter.dateStyle = NSDateFormatterShortStyle;
     
     NSString *dateTime = [dateFormatter stringFromDate: dateTimePicker.date];
-    NSLog( @"Set Alarm : %@", dateTime);
+    //NSLog( @"Set Alarm : %@", dateTime);
+    
+    [Alarm newAlarm:dateTime];
+    
     
     //self.alarmText.text = [dateFormatter stringFromDate:dateTimePicker.date];
     //self.alarmText.text = (@"%s", dateTime);
