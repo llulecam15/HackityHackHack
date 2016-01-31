@@ -93,9 +93,9 @@
     NSString *arrayToStr = [stk componentsJoinedByString:@" "];
     
     _alarmStk.text = arrayToStr;
-    stkToLabelTest.text = arrayToStr;
+    //stkToLabelTest.text = arrayToStr;
     // Set text to date and time in alarm stack
-    self.alarmStk.text = dateTime;
+    //self.alarmStk.text = dateTime;
     //[dateFormatter release];
 }
 
