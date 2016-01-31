@@ -11,10 +11,9 @@
 
 @interface ViewController () {
     
-    
     __weak IBOutlet UIDatePicker *datePickerView;
-    __weak IBOutlet UILabel *displayAlarm;
     
+    __weak IBOutlet UILabel *displayAlarm;
     __weak IBOutlet UILabel *_alarmStk;
     __weak IBOutlet UILabel *labelTest;
     
@@ -31,6 +30,7 @@
     
     dateTimePicker.date = [NSDate date];
     
+    // Update date and time
     [self->datePickerView addTarget:self action:@selector(changeDP:) forControlEvents:UIControlEventValueChanged];
     
     //[self SetAlarmButton:<#(id)#>sender];
@@ -41,8 +41,11 @@
 
 - (void)changeDP:(UIDatePicker *)datePicker {
     
+    // Get date and time
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat: @"dd-MM-yyyy HH:mm"];
+    
+    // Create date and time string
     NSString *dateString = [dateFormatter stringFromDate:datePicker.date];
     //self->displayAlarm.text = @"hhelllooo"; //dateString;
     self->labelTest.text = dateString;        //Displays Date&Time on label
@@ -64,34 +67,41 @@
 }
 
 - (IBAction)SetAlarmButton:(id)sender {
-    Alarm *alarm;
+    Alarm *alarm;                              // Create alarm object
     
-    alarm = [[Alarm alloc] init];
+    alarm = [[Alarm alloc] init];              // Initialize alarm
     
     
-    
+    // Format date and time
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.timeZone = [NSTimeZone defaultTimeZone];
     dateFormatter.timeStyle = NSDateFormatterShortStyle;
     dateFormatter.dateStyle = NSDateFormatterShortStyle;
     
+    // Create date and time string
     NSString *dateTime = [dateFormatter stringFromDate: dateTimePicker.date];
     //NSLog( @"Set Alarm Button Was Pressed : %@", dateTime);
     
-    [Alarm newAlarm:dateTime];
+    [Alarm newAlarm:dateTime];                  // Pass string to alarm object
     
     
     //self.alarmText.text = [dateFormatter stringFromDate:dateTimePicker.date];
     //self.alarmText.text = (@"%s", dateTime);
-    NSMutableArray * stk = [Alarm getStack];
+    NSMutableArray * stk = [Alarm getStack];    // Create alarm stack
     
+    int numElem = [stk count];
+    
+    
+    // Set text to date and time in alarm stack
     self.alarmStk.text = dateTime;
     //[dateFormatter release];
 }
 
+// Switch for alarm priority
 - (IBAction)SwitchBool:(UISwitch *)sender {
 }
 
+// Create notification when alarm goes off
 - (void) alarmNotification:(NSDate *)date {
     
     UILocalNotification *noti = [[UILocalNotification alloc] init];
